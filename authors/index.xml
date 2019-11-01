@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors | Academic</title>
+    <title>Authors | Kexin Chen</title>
     <link>https://kexinchenn.github.io/authors/</link>
       <atom:link href="https://kexinchenn.github.io/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kexinchenn.github.io/img/icon-192.png</url>
       <title>Authors</title>
@@ -15,10 +15,26 @@
     <item>
       <title></title>
       <link>https://kexinchenn.github.io/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
       <guid>https://kexinchenn.github.io/authors/admin/</guid>
-      <description>&lt;p&gt;I am a second year PhD student studying Cognitive Neuroscience at the Universtity of California, Irvine. I am advised by Professor Jeff Krichmar.&lt;/p&gt;
+      <description>&lt;p&gt;I am a second year PhD student studying Cognitive Neuroscience at the Universtity of California, Irvine. I am interested in learning how the brain efficiently encodes stimuli in the world. Specifically, I focus on how motion and spatial information is represented and retrieved during navigational behaviors. I am a member of the &lt;a href=&#34;http://www.socsci.uci.edu/~jkrichma/CARL/index.html&#34; target=&#34;_blank&#34;&gt;Cognitive Anteater Robotics Laboratory&lt;/a&gt; and am advised by &lt;a href=&#34;http://www.socsci.uci.edu/~jkrichma/&#34; target=&#34;_blank&#34;&gt;Prof. Jeff Krichmar&lt;/a&gt;.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Jeffrey Krichmar</title>
+      <link>https://kexinchenn.github.io/authors/jeffrey-krichmar/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://kexinchenn.github.io/authors/jeffrey-krichmar/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michael Beyeler</title>
+      <link>https://kexinchenn.github.io/authors/michael-beyeler/</link>
+      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://kexinchenn.github.io/authors/michael-beyeler/</guid>
+      <description></description>
     </item>
     
   </channel>
