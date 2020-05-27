@@ -2,8 +2,8 @@
   "name": "Kexin Chen",
   "short_name": "Kexin Chen",
   "lang": "en-us",
-  "theme_color": "#EF525B",
-  "background_color": "#EF525B",
+  "theme_color": "#795548",
+  "background_color": "#795548",
   "icons": [{
     "src": "../img/icon-192.png",
     "sizes": "192x192",
