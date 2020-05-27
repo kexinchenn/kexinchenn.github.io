@@ -40,7 +40,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#EF525B">
   
 
   
@@ -78,7 +78,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
   
 
   
@@ -90,6 +90,42 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   
 
 
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167744064-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-167744064-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
   
@@ -108,17 +144,16 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Kexin Chen">
   <meta property="og:url" content="https://kexinchenn.github.io/publication/mstd/">
   <meta property="og:title" content="A Spiking Neural Network Model for Visual Motion Perception | Kexin Chen">
   <meta property="og:description" content="&lt;em&gt;A spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. Work presented at *Society for Neuroscience*, Chicago, 2019.&lt;/em&gt; &lt;br&gt;&lt;br&gt;
-Receiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction."><meta property="og:image" content="https://kexinchenn.github.io/img/icon-192.png">
-  <meta property="twitter:image" content="https://kexinchenn.github.io/img/icon-192.png"><meta property="og:locale" content="en-us">
+Receiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction."><meta property="og:image" content="https://kexinchenn.github.io/publication/mstd/featured.png">
+  <meta property="twitter:image" content="https://kexinchenn.github.io/publication/mstd/featured.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2019-10-21T00:00:00&#43;00:00">
@@ -150,6 +185,10 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
     "@id": "https://kexinchenn.github.io/publication/mstd/"
   },
   "headline": "A Spiking Neural Network Model for Visual Motion Perception",
+  
+  "image": [
+    "https://kexinchenn.github.io/publication/mstd/featured.png"
+  ],
   
   "datePublished": "2019-10-21T00:00:00Z",
   "dateModified": "2019-10-21T00:00:00Z",
@@ -367,18 +406,26 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
 
-  
+
+
+
+
+
+
+
 
   
   
+    
   
+
+
 <div class="article-container pt-3">
   <h1>A Spiking Neural Network Model for Visual Motion Perception</h1>
 
   
 
   
-    
 
 
 <div class="article-metadata">
@@ -393,7 +440,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
   
-  <span><a href="/authors/admin/">Kexin Chen</a></span>, <span><a href="/authors/michael-beyeler/">Michael Beyeler</a></span>, <span><a href="/authors/jeffrey-krichmar/">Jeffrey Krichmar</a></span>
+  <span>Kexin Chen</span>, <span>Michael Beyeler</span>, <span>Jeffrey Krichmar</span>
 
   </div>
   
@@ -422,7 +469,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 </div>
 
-    
+  
 
 
 
@@ -478,7 +525,14 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 </div>
 
 
-  
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 405px;">
+  <div style="position: relative">
+    <img src="/publication/mstd/featured_huc04252e561973f683d3d7d85c120dd4b_71496_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    
+  </div>
 </div>
 
 

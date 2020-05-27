@@ -39,7 +39,7 @@
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#EF525B">
   
 
   
@@ -77,7 +77,7 @@
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono%7CLora:400,700%7CRoboto:400,700&display=swap">
   
 
   
@@ -89,6 +89,42 @@
   
 
 
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167744064-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+      dataLayer.push(arguments);
+  }
+
+  function trackOutboundLink(url) {
+    gtag('event', 'click', {
+         'event_category': 'outbound',
+         'event_label': url,
+         'transport_type': 'beacon',
+         'event_callback': function () {
+           document.location = url;
+         }
+    });
+    console.debug("Outbound link clicked: " + url);
+  }
+
+  function onClickCallback(event) {
+    if ((event.target.tagName !== 'A') || (event.target.host === window.location.host)) {
+      return;
+    }
+    trackOutboundLink(event.target);  
+  }
+
+  gtag('js', new Date());
+  gtag('config', 'UA-167744064-1', {});
+
+  
+  document.addEventListener('click', onClickCallback, false);
+</script>
 
 
   
@@ -485,9 +521,13 @@
   <div class="col-12 col-lg-8">
 
     
-    <h1>About me</h1>
+    <h1>Hello!</h1>
 
-    <p>I am a second year PhD student studying Cognitive Neuroscience at the Universtity of California, Irvine. I am interested in learning how the brain efficiently encodes stimuli in the world. Specifically, I focus on how motion and spatial information is represented and retrieved during navigational behaviors. I am a member of the <a href="http://www.socsci.uci.edu/~jkrichma/CARL/index.html" target="_blank">Cognitive Anteater Robotics Laboratory</a> and am advised by <a href="http://www.socsci.uci.edu/~jkrichma/" target="_blank">Prof. Jeff Krichmar</a>.</p>
+    <p>This is Kexin Chen. I am a second year PhD student studying Cognitive Neuroscience at the Universtity of California, Irvine. I am interested in learning how the brain create efficient representations of the world. Specifically, I focus on how motion and spatial information are represented and how they are retrieved during navigational behaviors. I am a member of the <a href="http://www.socsci.uci.edu/~jkrichma/CARL/index.html" target="_blank">Cognitive Anteater Robotics Laboratory</a> and am advised by <a href="http://www.socsci.uci.edu/~jkrichma/" target="_blank">Prof. Jeff Krichmar</a>.</p>
+
+<p>Have a look at some of my <a href="#publications">projects</a> !</p>
+
+<p>For more about me please checkout my <a href="files/cv.pdf" target="_blank">CV</a></p>
 
 
     <div class="row">
@@ -669,7 +709,7 @@
 
 
   
-  <span><a href="/authors/admin/">Kexin Chen</a></span>, <span><a href="/authors/michael-beyeler/">Michael Beyeler</a></span>, <span><a href="/authors/jeffrey-krichmar/">Jeffrey Krichmar</a></span>
+  <span>Kexin Chen</span>, <span>Michael Beyeler</span>, <span>Jeffrey Krichmar</span>
 
       </div>
       
@@ -705,6 +745,88 @@
 <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href="/files/sfn2019.pdf" target="_blank" rel="noopener">
   Poster
 </a>
+
+
+
+
+
+
+
+
+
+    </div>
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+    
+    <a href="/publication/mstd/" >
+      <img src="/publication/mstd/featured_huc04252e561973f683d3d7d85c120dd4b_71496_150x0_resize_lanczos_2.png" alt="">
+    </a>
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/publication/phaseprecession/" ></a>
+    </h3>
+
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+    </div>
+
+    
+    <div class="btn-links">
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
