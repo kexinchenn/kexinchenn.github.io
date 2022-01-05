@@ -28,11 +28,11 @@
   
     
   
-  <meta name="description" content="&lt;em&gt;A spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. [Poster](../../files/sfn2019.pdf) presented at *Society for Neuroscience*, Chicago, 2019.&lt;/em&gt; &lt;br&gt;&lt;br&gt;
-Receiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction.">
+  <meta name="description" content="&lt;em&gt; Differential Spatial Representations in Hippocampal CA1 and Subiculum Emerge in Evolved Spiking Neural Networks. [Paper](../../files/ijcnn2021.pdf) published in the 2021 International Joint Conference on Neural Networks (IJCNN) Proceedings.&lt;/em&gt; &lt;br&gt;&lt;br&gt;
+In rodent navigational studies, spatial responses have been identified in both the hippocampal subregion CA1 and the subiculum (SUB), but these two brain regions appear to encode spatial features differently. Place fields of SUB place cells are larger and less specific than CA1. Additionally, SUB neurons exhibit stronger directional modulation for heading and axes of travel. Based on neural and behavioral data recorded as rats perform a navigational task on a &#34;triple-T&#34; maze, we present a spiking neural network modeling framework to replicate response properties observed in the CA1 and SUB. The parameters of Spike Timing Dependent Plasticity and homeostatic scaling (STDP-H) were evolved such that the response of the two different SNNs resembled recordings from CA1 and SUB when rats traversed the triple-T maze. Our results suggest that positional input may be more influential in forming CA1 place cells, while the SUB appears to integrate both allocentric positional information and self-motion cues to encode &#34;kinds of places&#34;. Furthermore, our results predict that the different spatial responses in these regions may be due in part to different STDP-H learning parameters. The framework presented here could be used as an automated parameter tuning system for replicating responses in other brain regions.">
 
   
-  <link rel="alternate" hreflang="en-us" href="https://kexinchenn.github.io/publication/mstd/">
+  <link rel="alternate" hreflang="en-us" href="https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/">
 
   
 
@@ -137,7 +137,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   <link rel="icon" type="image/png" href="/img/icon-32.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
 
-  <link rel="canonical" href="https://kexinchenn.github.io/publication/mstd/">
+  <link rel="canonical" href="https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/">
 
   
   
@@ -149,16 +149,16 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Kexin Chen">
-  <meta property="og:url" content="https://kexinchenn.github.io/publication/mstd/">
-  <meta property="og:title" content="A Spiking Neural Network Model for Visual Motion Perception | Kexin Chen">
-  <meta property="og:description" content="&lt;em&gt;A spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. [Poster](../../files/sfn2019.pdf) presented at *Society for Neuroscience*, Chicago, 2019.&lt;/em&gt; &lt;br&gt;&lt;br&gt;
-Receiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction."><meta property="og:image" content="https://kexinchenn.github.io/publication/mstd/featured.png">
-  <meta property="twitter:image" content="https://kexinchenn.github.io/publication/mstd/featured.png"><meta property="og:locale" content="en-us">
+  <meta property="og:url" content="https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/">
+  <meta property="og:title" content="Modeling Spatial Cognition Components with Spiking Neural Networks | Kexin Chen">
+  <meta property="og:description" content="&lt;em&gt; Differential Spatial Representations in Hippocampal CA1 and Subiculum Emerge in Evolved Spiking Neural Networks. [Paper](../../files/ijcnn2021.pdf) published in the 2021 International Joint Conference on Neural Networks (IJCNN) Proceedings.&lt;/em&gt; &lt;br&gt;&lt;br&gt;
+In rodent navigational studies, spatial responses have been identified in both the hippocampal subregion CA1 and the subiculum (SUB), but these two brain regions appear to encode spatial features differently. Place fields of SUB place cells are larger and less specific than CA1. Additionally, SUB neurons exhibit stronger directional modulation for heading and axes of travel. Based on neural and behavioral data recorded as rats perform a navigational task on a &#34;triple-T&#34; maze, we present a spiking neural network modeling framework to replicate response properties observed in the CA1 and SUB. The parameters of Spike Timing Dependent Plasticity and homeostatic scaling (STDP-H) were evolved such that the response of the two different SNNs resembled recordings from CA1 and SUB when rats traversed the triple-T maze. Our results suggest that positional input may be more influential in forming CA1 place cells, while the SUB appears to integrate both allocentric positional information and self-motion cues to encode &#34;kinds of places&#34;. Furthermore, our results predict that the different spatial responses in these regions may be due in part to different STDP-H learning parameters. The framework presented here could be used as an automated parameter tuning system for replicating responses in other brain regions."><meta property="og:image" content="https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/featured.png">
+  <meta property="twitter:image" content="https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/featured.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-10-21T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2021-07-20T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-10-21T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2021-07-20T00:00:00&#43;00:00">
   
 
   
@@ -182,16 +182,16 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://kexinchenn.github.io/publication/mstd/"
+    "@id": "https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/"
   },
-  "headline": "A Spiking Neural Network Model for Visual Motion Perception",
+  "headline": "Modeling Spatial Cognition Components with Spiking Neural Networks",
   
   "image": [
-    "https://kexinchenn.github.io/publication/mstd/featured.png"
+    "https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/featured.png"
   ],
   
-  "datePublished": "2019-10-21T00:00:00Z",
-  "dateModified": "2019-10-21T00:00:00Z",
+  "datePublished": "2021-07-20T00:00:00Z",
+  "dateModified": "2021-07-20T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -206,7 +206,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
       "url": "https://kexinchenn.github.io/img/icon-512.png"
     }
   },
-  "description": "\u003cem\u003eA spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. [Poster](../../files/sfn2019.pdf) presented at *Society for Neuroscience*, Chicago, 2019.\u003c/em\u003e \u003cbr\u003e\u003cbr\u003e\nReceiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction."
+  "description": "\u003cem\u003e Differential Spatial Representations in Hippocampal CA1 and Subiculum Emerge in Evolved Spiking Neural Networks. [Paper](../../files/ijcnn2021.pdf) published in the 2021 International Joint Conference on Neural Networks (IJCNN) Proceedings.\u003c/em\u003e \u003cbr\u003e\u003cbr\u003e\nIn rodent navigational studies, spatial responses have been identified in both the hippocampal subregion CA1 and the subiculum (SUB), but these two brain regions appear to encode spatial features differently. Place fields of SUB place cells are larger and less specific than CA1. Additionally, SUB neurons exhibit stronger directional modulation for heading and axes of travel. Based on neural and behavioral data recorded as rats perform a navigational task on a \"triple-T\" maze, we present a spiking neural network modeling framework to replicate response properties observed in the CA1 and SUB. The parameters of Spike Timing Dependent Plasticity and homeostatic scaling (STDP-H) were evolved such that the response of the two different SNNs resembled recordings from CA1 and SUB when rats traversed the triple-T maze. Our results suggest that positional input may be more influential in forming CA1 place cells, while the SUB appears to integrate both allocentric positional information and self-motion cues to encode \"kinds of places\". Furthermore, our results predict that the different spatial responses in these regions may be due in part to different STDP-H learning parameters. The framework presented here could be used as an automated parameter tuning system for replicating responses in other brain regions."
 }
 </script>
 
@@ -224,7 +224,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
 
-  <title>A Spiking Neural Network Model for Visual Motion Perception | Kexin Chen</title>
+  <title>Modeling Spatial Cognition Components with Spiking Neural Networks | Kexin Chen</title>
 
 </head>
 
@@ -421,7 +421,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
 <div class="article-container pt-3">
-  <h1>A Spiking Neural Network Model for Visual Motion Perception</h1>
+  <h1>Modeling Spatial Cognition Components with Spiking Neural Networks</h1>
 
   
 
@@ -452,7 +452,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
     
       
     
-    October 2019
+    July 2021
   </span>
   
 
@@ -495,23 +495,13 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-  
-  
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/files/sfn2019.pdf" target="_blank" rel="noopener">
-  Poster
+
+
+
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/ijcnn2021.pdf" target="_blank" rel="noopener">
+  PDF
 </a>
 
 
@@ -522,15 +512,23 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
 
-</div>
+
+
+
+
+
+
 
 
 </div>
 
 
-<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 405px;">
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 354px;">
   <div style="position: relative">
-    <img src="/publication/mstd/featured_huc04252e561973f683d3d7d85c120dd4b_71496_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    <img src="/publication/ca1_sub_ijcnn2021/featured_huee67fd7604ec917b7e8cd56648281c29_1731586_720x0_resize_lanczos_2.png" alt="" class="featured-image">
     
   </div>
 </div>
@@ -541,8 +539,8 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract"><em>A spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. <a href="../../files/sfn2019.pdf">Poster</a> presented at <em>Society for Neuroscience</em>, Chicago, 2019.</em> <br><br>
-Receiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction.</p>
+    <p class="pub-abstract"><em> Differential Spatial Representations in Hippocampal CA1 and Subiculum Emerge in Evolved Spiking Neural Networks. <a href="../../files/ijcnn2021.pdf">Paper</a> published in the 2021 International Joint Conference on Neural Networks (IJCNN) Proceedings.</em> <br><br>
+In rodent navigational studies, spatial responses have been identified in both the hippocampal subregion CA1 and the subiculum (SUB), but these two brain regions appear to encode spatial features differently. Place fields of SUB place cells are larger and less specific than CA1. Additionally, SUB neurons exhibit stronger directional modulation for heading and axes of travel. Based on neural and behavioral data recorded as rats perform a navigational task on a &ldquo;triple-T&rdquo; maze, we present a spiking neural network modeling framework to replicate response properties observed in the CA1 and SUB. The parameters of Spike Timing Dependent Plasticity and homeostatic scaling (STDP-H) were evolved such that the response of the two different SNNs resembled recordings from CA1 and SUB when rats traversed the triple-T maze. Our results suggest that positional input may be more influential in forming CA1 place cells, while the SUB appears to integrate both allocentric positional information and self-motion cues to encode &ldquo;kinds of places&rdquo;. Furthermore, our results predict that the different spatial responses in these regions may be due in part to different STDP-H learning parameters. The framework presented here could be used as an automated parameter tuning system for replicating responses in other brain regions.</p>
     
 
     

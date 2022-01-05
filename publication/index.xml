@@ -5,12 +5,20 @@
     <link>https://kexinchenn.github.io/publication/</link>
       <atom:link href="https://kexinchenn.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 20 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://kexinchenn.github.io/img/icon-192.png</url>
       <title>Publications</title>
       <link>https://kexinchenn.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>Modeling Spatial Cognition Components with Spiking Neural Networks</title>
+      <link>https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/</link>
+      <pubDate>Tue, 20 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://kexinchenn.github.io/publication/ca1_sub_ijcnn2021/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>A Spiking Neural Network Model for Visual Motion Perception</title>
