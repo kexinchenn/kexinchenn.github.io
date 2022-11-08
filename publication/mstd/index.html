@@ -28,8 +28,7 @@
   
     
   
-  <meta name="description" content="&lt;em&gt;A spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. [Poster](../../files/sfn2019.pdf) presented at *Society for Neuroscience*, Chicago, 2019.&lt;/em&gt; &lt;br&gt;&lt;br&gt;
-Receiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction.">
+  <meta name="description" content="&lt;em&gt;The brain may use dimensionality reduction and sparse coding to efficiently represent stimuli under metabolic constraints. Neurons in monkey area MSTd respond to complex optic flow patterns resulting from self-motion. We developed a spiking neural network model that showed MSTd-like response properties can emerge from evolving spike-timing-dependent plasticity with STDP-H parameters of the connections between then middle temporal area and MSTd. Simulated MSTd neurons formed a sparse, reduced population code capable of encoding perceptual variables important for self-motion perception. This model demonstrates that complex neuronal responses observed in MSTd may emerge from efficient coding and suggests that neurobiological plasticity, like STDP-H, may contribute to reducing the dimensions of input stimuli and allowing spiking neurons to learn sparse representations.">
 
   
   <link rel="alternate" hreflang="en-us" href="https://kexinchenn.github.io/publication/mstd/">
@@ -150,15 +149,14 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   
   <meta property="og:site_name" content="Kexin Chen">
   <meta property="og:url" content="https://kexinchenn.github.io/publication/mstd/">
-  <meta property="og:title" content="A Spiking Neural Network Model for Visual Motion Perception | Kexin Chen">
-  <meta property="og:description" content="&lt;em&gt;A spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. [Poster](../../files/sfn2019.pdf) presented at *Society for Neuroscience*, Chicago, 2019.&lt;/em&gt; &lt;br&gt;&lt;br&gt;
-Receiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction."><meta property="og:image" content="https://kexinchenn.github.io/publication/mstd/featured.png">
+  <meta property="og:title" content="Cortical Motion Perception Emerges from Dimensionality Reduction with Evolved Spike-Timing-Dependent Plasticity Rules | Kexin Chen">
+  <meta property="og:description" content="&lt;em&gt;The brain may use dimensionality reduction and sparse coding to efficiently represent stimuli under metabolic constraints. Neurons in monkey area MSTd respond to complex optic flow patterns resulting from self-motion. We developed a spiking neural network model that showed MSTd-like response properties can emerge from evolving spike-timing-dependent plasticity with STDP-H parameters of the connections between then middle temporal area and MSTd. Simulated MSTd neurons formed a sparse, reduced population code capable of encoding perceptual variables important for self-motion perception. This model demonstrates that complex neuronal responses observed in MSTd may emerge from efficient coding and suggests that neurobiological plasticity, like STDP-H, may contribute to reducing the dimensions of input stimuli and allowing spiking neurons to learn sparse representations."><meta property="og:image" content="https://kexinchenn.github.io/publication/mstd/featured.png">
   <meta property="twitter:image" content="https://kexinchenn.github.io/publication/mstd/featured.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2019-10-21T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2022-07-27T00:00:00&#43;00:00">
     
-    <meta property="article:modified_time" content="2019-10-21T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2022-07-27T00:00:00&#43;00:00">
   
 
   
@@ -184,14 +182,14 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
     "@type": "WebPage",
     "@id": "https://kexinchenn.github.io/publication/mstd/"
   },
-  "headline": "A Spiking Neural Network Model for Visual Motion Perception",
+  "headline": "Cortical Motion Perception Emerges from Dimensionality Reduction with Evolved Spike-Timing-Dependent Plasticity Rules",
   
   "image": [
     "https://kexinchenn.github.io/publication/mstd/featured.png"
   ],
   
-  "datePublished": "2019-10-21T00:00:00Z",
-  "dateModified": "2019-10-21T00:00:00Z",
+  "datePublished": "2022-07-27T00:00:00Z",
+  "dateModified": "2022-07-27T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -206,7 +204,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
       "url": "https://kexinchenn.github.io/img/icon-512.png"
     }
   },
-  "description": "\u003cem\u003eA spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. [Poster](../../files/sfn2019.pdf) presented at *Society for Neuroscience*, Chicago, 2019.\u003c/em\u003e \u003cbr\u003e\u003cbr\u003e\nReceiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction."
+  "description": "\u003cem\u003eThe brain may use dimensionality reduction and sparse coding to efficiently represent stimuli under metabolic constraints. Neurons in monkey area MSTd respond to complex optic flow patterns resulting from self-motion. We developed a spiking neural network model that showed MSTd-like response properties can emerge from evolving spike-timing-dependent plasticity with STDP-H parameters of the connections between then middle temporal area and MSTd. Simulated MSTd neurons formed a sparse, reduced population code capable of encoding perceptual variables important for self-motion perception. This model demonstrates that complex neuronal responses observed in MSTd may emerge from efficient coding and suggests that neurobiological plasticity, like STDP-H, may contribute to reducing the dimensions of input stimuli and allowing spiking neurons to learn sparse representations."
 }
 </script>
 
@@ -224,7 +222,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
 
-  <title>A Spiking Neural Network Model for Visual Motion Perception | Kexin Chen</title>
+  <title>Cortical Motion Perception Emerges from Dimensionality Reduction with Evolved Spike-Timing-Dependent Plasticity Rules | Kexin Chen</title>
 
 </head>
 
@@ -357,7 +355,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/files/cv.pdf"><span>CV</span></a>
+          <a class="nav-link " href="/files/CV.pdf"><span>CV</span></a>
         </li>
 
         
@@ -421,7 +419,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
 <div class="article-container pt-3">
-  <h1>A Spiking Neural Network Model for Visual Motion Perception</h1>
+  <h1>Cortical Motion Perception Emerges from Dimensionality Reduction with Evolved Spike-Timing-Dependent Plasticity Rules</h1>
 
   
 
@@ -432,19 +430,6 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
   
   
-  
-  
-  <div>
-    
-
-
-
-  
-  <span>Kexin Chen</span>
-
-  </div>
-  
-  
 
   
   <span class="article-date">
@@ -452,7 +437,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
     
       
     
-    October 2019
+    July 2022
   </span>
   
 
@@ -495,13 +480,14 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
   
+    
+  
 
 
 
-
-
-
-
+<a class="btn btn-outline-primary my-1 mr-1" href="/files/5882.full.pdf" target="_blank" rel="noopener">
+  PDF
+</a>
 
 
 
@@ -510,9 +496,14 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
   
     
   
-<a class="btn btn-outline-primary my-1 mr-1" href="/files/sfn2019.pdf" target="_blank" rel="noopener">
-  Poster
+<a class="btn btn-outline-primary my-1 mr-1" href="https://github.com/kexinchenn/Sparse-Reduced-MSTd-SNN-Model" target="_blank" rel="noopener">
+  Code
 </a>
+
+
+
+
+
 
 
 
@@ -541,8 +532,7 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract"><em>A spiking neural network model of macaque MSTd. MSTd-like response properties emerged from evolving STDP and homeostatic scaling parameters in the network. <a href="../../files/sfn2019.pdf">Poster</a> presented at <em>Society for Neuroscience</em>, Chicago, 2019.</em> <br><br>
-Receiving direct input from the medial temporal (MT) area, the dorsal part of the medial superior temporal (MSTd) area is believed to play a key role in visual motion processing. A previous study demonstrated that several neurophysiological response properties of MSTd, such as 3D translation and rotation selectivity, emerge from applying a dimensionality reduction technique known as Nonnegative Matrix Factorization (NMF) to MT-like activity patterns. It was hypothesized that spike-timing dependent plasticity and homeostatic synaptic scaling (STDP-H) in Spiking Neural Networks (SNNs) performs a similar function as NMF. To test this hypothesis, we implemented a SNN model of macaque MT/MSTd, utilizing an evolutionary algorithm to optimize the parameters of STDP-H. Performance was measured by how well the SNN reconstructed flow pattern stimuli. In the network, each MT neuron was tuned to a speed of 1m/s and one of 8 different directions of movements, and had a receptive field of 1 pixel radius, subtending ~3° of visual angle. During training, simulated flow fields were fed into the network and STDP-H updated the connection weights between groups. By multiplying the MT to MSTd connection weights and MSTd activations, we were able to reconstruct MT activity patterns (the reconstructed MT and the input MT neuronal firing rates have a correlation of 0.68±0.11), and recover the flow field stimuli with high fidelity. The MSTd neurons appeared to have 3D translation and rotation selectivity resembling neurophysiological data, and each neuron spanned only a subregion of the visual field, preferring a mixture of translational and rotational flow components. The model accurately captured the 3D visual response properties of MSTd and indicated that STDP-H is indeed performing a form of dimensionality reduction.</p>
+    <p class="pub-abstract"><em>The brain may use dimensionality reduction and sparse coding to efficiently represent stimuli under metabolic constraints. Neurons in monkey area MSTd respond to complex optic flow patterns resulting from self-motion. We developed a spiking neural network model that showed MSTd-like response properties can emerge from evolving spike-timing-dependent plasticity with STDP-H parameters of the connections between then middle temporal area and MSTd. Simulated MSTd neurons formed a sparse, reduced population code capable of encoding perceptual variables important for self-motion perception. This model demonstrates that complex neuronal responses observed in MSTd may emerge from efficient coding and suggests that neurobiological plasticity, like STDP-H, may contribute to reducing the dimensions of input stimuli and allowing spiking neurons to learn sparse representations.</p>
     
 
     
@@ -617,10 +607,6 @@ Receiving direct input from the medial temporal (MT) area, the dorsal part of th
 
 
 
-  
-  
-    
-  
   
 
 
